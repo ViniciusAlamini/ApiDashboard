@@ -17,24 +17,47 @@ namespace ApiDashboard.Controllers
 
 
         [HttpGet("buscar-mes-ano")]
-        public async Task<IActionResult> GetTicketsByMonthAndYear(int mes, int ano)
+        public async Task<IActionResult> BuscaPorMesAno(int mes, int ano)
         {
+            try { 
             var tickets = await _ticketRepository.BuscaPorMesAnoAsync(mes, ano);
             return Ok(tickets);
+        }
+            catch (Exception ex)
+            {
+                return BadRequest($"Algum erro ocorreu durante a requisição{ex.Message}");
+            }
+
         }
 
         [HttpGet("agrupar-por-cliente")]
         public async Task<IActionResult> AgruparPorCliente()
         {
-            var result = await _ticketRepository.AgruparPorClienteAsync();
-            return Ok(result);
+            try
+            {
+                var result = await _ticketRepository.AgruparPorClienteAsync();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Algum erro ocorreu durante a requisição{ex.Message}");
+            }
+            
         }
 
         [HttpGet("agrupar-por-modulo")]
         public async Task<IActionResult> AgruparPorModulo()
         {
-            var result = await _ticketRepository.AgruparPorModuloAsync();
-            return Ok(result);
+            try
+            {
+                var result = await _ticketRepository.AgruparPorModuloAsync();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Algum erro ocorreu durante a requisição{ex.Message}");
+            }
+            
         }
 
         [HttpPost]
