@@ -61,24 +61,6 @@ Siga os passos abaixo para configurar o projeto:
 ```bash
    dotnet add package Swashbuckle.AspNetCore --version 6.4.0
 ```
-## 🗄️ Banco de Dados
-
-Após a instalação das dependências, execute o comando:
-
-```bash
-   dotnet ef database update
-```
-
-As migrations já criarão o banco de dados com suas tabelas. Para configurar a conexão e o nome do banco, acesse o arquivo `./appsettings.json` e substitua a seguinte linha pelos seus valores de `User ID`, `Password`, `Host`, `Port` e `Database`:
-
-```json
-  "ConnectionStrings": {
-    "Connection": "User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=Dashboard2;Connection Lifetime=0" // configure aqui sua conexão
-  }
-```
-Aqui está a seção ajustada com as correções que você solicitou:
-
-markdown
 
 ## 🗄️ Banco de Dados
 
