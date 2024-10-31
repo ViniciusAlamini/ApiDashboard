@@ -88,7 +88,7 @@ Lembre-se de que não é necessário criar o banco de dados anteriormente; apena
 
 Já existem dados prontos para serem carregados na pasta `SQL/dados.SQL`. Para carregar esses dados no seu banco de dados, siga os passos abaixo:
 
-1. **Acesse o pgAdmin** e conecte-se ao seu servidor PostgreSQL.
+1. **Acesse o pgAdmin 4** e conecte-se ao seu servidor PostgreSQL(Procure pela barra de pesquisa do Windows).
 2. **Escolha o banco de dados** onde você deseja executar os scripts.
 3. Clique com o botão direito no nome do banco de dados e selecione **Query Tool**.
 4. Na janela da Query Tool, clique em **Open File** e navegue até a pasta `SQL/dados.SQL` para abrir o script de dados prontos.
@@ -96,6 +96,12 @@ Já existem dados prontos para serem carregados na pasta `SQL/dados.SQL`. Para c
 
 Certifique-se de que o script contém as instruções SQL necessárias para inserir os dados corretamente no banco.
 
+## Rodando a API
+Após todos os passos anteriores, basta executar o comando seguinda para rodar a API:
+
+```bash
+   dotnet run
+```
 
 
 
