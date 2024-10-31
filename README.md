@@ -68,7 +68,6 @@ Após a instalação das dependências, execute o comando:
 ```bash
 dotnet ef database update
 ```
-swift
 
 
 As migrations já criarão o banco de dados com suas tabelas. Para configurar a conexão e o nome do banco, acesse o arquivo `./appsettings.json` e substitua a seguinte linha pelos seus valores de `User ID`, `Password`, `Host`, `Port` e `Database`:
