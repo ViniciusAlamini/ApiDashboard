@@ -65,9 +65,9 @@ Siga os passos abaixo para configurar o projeto:
 ## 🗄️ Banco de Dados
 
 Após a instalação das dependências, execute o comando:
-
-terminal dotnet ef database update
-
+```bash
+dotnet ef database update
+```
 swift
 
 
